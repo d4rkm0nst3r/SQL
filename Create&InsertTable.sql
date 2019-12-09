@@ -30,7 +30,7 @@ CREATE TABLE Proyectos
 -- TABLA ASIGNACION
 CREATE TABLE Asignacion
 (
-    IdEmp INT REFERENCES Empleados (IdEmp),
+    IdEmp INT PRIMARY KEY REFERENCES Empleados (IdEmp),
     IdProxy INT REFERENCES Proyectos (IdProxy)
 );
 --- DATOS DEPARTAMENTOS ---
